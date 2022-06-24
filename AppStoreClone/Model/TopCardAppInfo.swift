@@ -9,7 +9,7 @@ import Foundation
 
 @MainActor
 class TopCardAppInfo: AppInfo {
-    @Published var cardTitle = "Default Card Title"
+    @Published var cardLabel = "Default Card Title"
     @Published var cardSubtitle = "Default Card Subtitle"
 
     override func fetchInfo() async {
@@ -17,7 +17,7 @@ class TopCardAppInfo: AppInfo {
         async let cardTitle = fetchTitle()
         async let cardSubtitle = fetchTitle()
 
-        self.cardTitle = await cardTitle
+        self.cardLabel = await cardTitle
         self.cardSubtitle = await cardSubtitle
     }
 }

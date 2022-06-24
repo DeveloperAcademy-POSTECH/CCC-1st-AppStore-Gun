@@ -14,7 +14,7 @@ struct TopCardView: View {
         VStack {
             HStack {
                 VStack(alignment: .leading) {
-                    Text(topCardAppInfo.cardTitle)
+                    Text(topCardAppInfo.cardLabel)
                         .foregroundColor(.blue)
                         .font(.caption)
                     Text(topCardAppInfo.name)
