@@ -14,8 +14,8 @@ struct TitleReceiver: Codable {
 @MainActor
 class AppInfo: Identifiable, ObservableObject {
     let id: UUID
-    @Published var title = "Default Title"
-    @Published var subtitle = "Default Subtitle"
+    @Published var name = "Default Name"
+    @Published var subName = "Default SubName"
     let isInternalPurchaseExists = Int.random(in: 0...1) == 1
 
     init(id: UUID) {
@@ -40,7 +40,7 @@ class AppInfo: Identifiable, ObservableObject {
         async let title = fetchTitle()
         async let subtitle = fetchTitle()
 
-        self.title = await title
-        self.subtitle = await subtitle
+        self.name = await title
+        self.subName = await subtitle
     }
 }
