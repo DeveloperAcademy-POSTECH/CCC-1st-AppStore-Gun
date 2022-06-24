@@ -13,6 +13,7 @@
 		AB47F145286436A0003A0195 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB47F144286436A0003A0195 /* Preview Assets.xcassets */; };
 		AB47F14E286437B7003A0195 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AB47F14D286437B7003A0195 /* .swiftlint.yml */; };
 		AB47F15428644356003A0195 /* TopCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47F15328644356003A0195 /* TopCardView.swift */; };
+		ABAF84582865D8F0000663D1 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAF84572865D8F0000663D1 /* AppInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		AB47F144286436A0003A0195 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AB47F14D286437B7003A0195 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		AB47F15328644356003A0195 /* TopCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCardView.swift; sourceTree = "<group>"; };
+		ABAF84572865D8F0000663D1 /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		AB47F13C286436A0003A0195 /* AppStoreClone */ = {
 			isa = PBXGroup;
 			children = (
+				ABAF84562865D8E5000663D1 /* Model */,
 				AB47F152286442AA003A0195 /* View */,
 				AB47F13D286436A0003A0195 /* AppStoreCloneApp.swift */,
 				AB47F13F286436A0003A0195 /* ContentView.swift */,
@@ -79,6 +82,14 @@
 				AB47F15328644356003A0195 /* TopCardView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		ABAF84562865D8E5000663D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ABAF84572865D8F0000663D1 /* AppInfo.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB47F15428644356003A0195 /* TopCardView.swift in Sources */,
+				ABAF84582865D8F0000663D1 /* AppInfo.swift in Sources */,
 				AB47F140286436A0003A0195 /* ContentView.swift in Sources */,
 				AB47F13E286436A0003A0195 /* AppStoreCloneApp.swift in Sources */,
 			);
