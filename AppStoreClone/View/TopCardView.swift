@@ -8,16 +8,18 @@
 import SwiftUI
 
 struct TopCardView: View {
+    @StateObject private var topCardAppInfo = TopCardAppInfo(id: UUID())
+
     var body: some View {
         VStack {
             HStack {
                 VStack(alignment: .leading) {
-                    Text("현재 진행 중")
+                    Text(topCardAppInfo.cardTitle)
                         .foregroundColor(.blue)
                         .font(.caption)
-                    Text("리그 오브 레전드 : 와일드 리프트")
+                    Text(topCardAppInfo.name)
                         .font(.title2)
-                    Text("파이크와 노틸러스 등장!")
+                    Text(topCardAppInfo.cardSubtitle)
                         .foregroundColor(Color(.systemGray))
                         .font(.title3)
                 }
@@ -41,10 +43,10 @@ struct TopCardView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 5))
                         .frame(width: 37, height: 37)
                         VStack(alignment: .leading) {
-                            Text("리그 오브 레전드 : 와일드 리프트")
+                            Text(topCardAppInfo.name)
                                 .font(.caption)
                                 .foregroundColor(.white)
-                            Text("5:5 MOBA 전투를 위한 팀을 구성하세요.")
+                            Text(topCardAppInfo.subName)
                                 .font(.caption2)
                                 .foregroundColor(Color(.lightGray))
                         }
@@ -75,6 +77,9 @@ struct TopCardView: View {
             .frame(maxWidth: .infinity, maxHeight: UIScreen.main.bounds.height * (224 / 844))
         }
         .frame(maxWidth: .infinity)
+        .task {
+            await topCardAppInfo.fetchInfo()
+        }
     }
 }
 
