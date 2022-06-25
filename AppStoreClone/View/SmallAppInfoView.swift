@@ -10,7 +10,7 @@ import SwiftUI
 struct SmallAppInfoView: View {
     @StateObject private var appInfo: AppInfo
     let index: Int
-    let ranked: Bool
+    let ranked: Bool // ranked가 true인 경우 index를 순위로 사용
 
     init(appId: UUID, index: Int, ranked: Bool) {
         _appInfo = StateObject(wrappedValue: AppInfo(id: appId))
