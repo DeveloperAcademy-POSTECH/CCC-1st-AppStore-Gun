@@ -65,18 +65,21 @@ struct TopCardView: View {
                                 }
                                 .frame(width: 74, height: 29)
                             }
-                            Text("앱 내 구입")
-                                .font(.system(size: 9))
-                                .foregroundColor(.white)
+                            
+                            if topCardAppInfo.isInternalPurchaseExists {
+                                Text("앱 내 구입")
+                                    .font(.system(size: 9))
+                                    .foregroundColor(.white)
+                            }
                         }
                     }
                     .padding(.horizontal, 14)
                     .padding(.bottom, 9)
                 }
             }
-            .frame(maxWidth: .infinity, maxHeight: UIScreen.main.bounds.height * (224 / 844))
+            .frame(height: Constants.screenHeight * (224 / 844))
         }
-        .frame(maxWidth: .infinity)
+        .frame(width: Constants.screenWidth * (350 / 390))
         .task {
             await topCardAppInfo.fetchInfo()
         }
