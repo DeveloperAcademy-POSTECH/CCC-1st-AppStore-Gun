@@ -65,7 +65,6 @@ struct TopCardView: View {
                                 }
                                 .frame(width: 74, height: 29)
                             }
-                            
                             if topCardAppInfo.isInternalPurchaseExists {
                                 Text("앱 내 구입")
                                     .font(.system(size: 9))

@@ -13,7 +13,9 @@ class TopCardAppInfo: AppInfo {
     @Published var cardSubtitle = "Default Card Subtitle"
 
     override func fetchInfo() async {
-        await super.fetchInfo()
+        Task {
+            await super.fetchInfo()
+        }
         async let cardTitle = fetchTitle()
         async let cardSubtitle = fetchTitle()
 
