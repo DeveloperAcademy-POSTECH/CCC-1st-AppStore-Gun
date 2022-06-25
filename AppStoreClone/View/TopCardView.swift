@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct TopCardView: View {
-    @StateObject private var topCardAppInfo = TopCardAppInfo(id: UUID())
+    @StateObject private var topCardAppInfo: TopCardAppInfo
+
+    init(appId: UUID) {
+        _topCardAppInfo = StateObject<TopCardAppInfo>(wrappedValue: TopCardAppInfo(id: appId))
+    }
 
     var body: some View {
         VStack {
@@ -87,7 +91,7 @@ struct TopCardView: View {
 
 struct TopCardView_Previews: PreviewProvider {
     static var previews: some View {
-        TopCardView()
+        TopCardView(appId: UUID())
             .preferredColorScheme(.dark)
             .padding(.horizontal, 16)
     }
