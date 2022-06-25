@@ -9,25 +9,38 @@ import SwiftUI
 
 struct SmallAppInfoView: View {
     @StateObject private var appInfo: AppInfo
+    let rank: Int?
 
-    init(appId: UUID) {
+    init(appId: UUID, rank: Int?) {
         _appInfo = StateObject(wrappedValue: AppInfo(id: appId))
+        self.rank = rank
     }
 
     var body: some View {
-        HStack {
+        HStack(spacing: 9) {
             RandomImage(cornerRadius: 12)
             .frame(width: 62, height: 62)
 
-            VStack(alignment: .leading, spacing: 6) {
-                Text(appInfo.name)
-                    .font(.subheadline)
-                Text(appInfo.subName)
-                    .font(.caption)
-                    .foregroundColor(Color(.lightGray))
+            HStack(spacing: 13) {
+                if let rank = self.rank {
+                    VStack(spacing: 6) {
+                        Text("\(rank)")
+                            .font(.subheadline)
+                        Text(" ")
+                            .font(.caption)
+                    }
+                }
+
+                VStack(alignment: .leading, spacing: 6) {
+                    Text(appInfo.name)
+                        .font(.subheadline)
+                    Text(appInfo.subName)
+                        .font(.caption)
+                        .foregroundColor(Color(.lightGray))
+                }
             }
 
-            Spacer()
+            Spacer(minLength: 0)
 
             DownloadButton(hasPurchase: appInfo.hasInternalPurchase)
         }
@@ -40,6 +53,6 @@ struct SmallAppInfoView: View {
 
 struct SmallAppInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        SmallAppInfoView(appId: UUID()).preferredColorScheme(.dark)
+        SmallAppInfoView(appId: UUID(), rank: nil).preferredColorScheme(.dark)
     }
 }
