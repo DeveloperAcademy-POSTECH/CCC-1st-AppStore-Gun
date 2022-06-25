@@ -16,12 +16,7 @@ struct SmallAppInfoView: View {
 
     var body: some View {
         HStack {
-            AsyncImage(url: URL(string: "https://source.unsplash.com/random")) { image in
-                image.resizable()
-            } placeholder: {
-                ProgressView()
-            }
-            .clipShape(RoundedRectangle(cornerRadius: 12))
+            RandomImage(cornerRadius: 12)
             .frame(width: 62, height: 62)
 
             VStack(alignment: .leading, spacing: 6) {
