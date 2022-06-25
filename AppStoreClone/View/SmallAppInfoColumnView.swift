@@ -9,13 +9,14 @@ import SwiftUI
 
 struct SmallAppInfoColumnView: View {
     let ranked: Bool
-    let appIdRankTuples: [(UUID, Int)]
+    let appIdRankTuples: [AppIdWithIndex]
 
     var body: some View {
         VStack(spacing: 5) {
-            ForEach(appIdRankTuples, id: \.0) { id, index in
-                SmallAppInfoView(appId: id, index: index, ranked: ranked)
+            ForEach(appIdRankTuples, id: \.id) { appIdWithIndex in
+                SmallAppInfoView(appId: appIdWithIndex.id, index: appIdWithIndex.index, ranked: ranked)
             }
+            Spacer(minLength: 0)
         }
     }
 }
@@ -23,9 +24,9 @@ struct SmallAppInfoColumnView: View {
 struct SmallAppInfoColumnView_Previews: PreviewProvider {
     static var previews: some View {
         SmallAppInfoColumnView(ranked: true, appIdRankTuples: [
-            (UUID(), 1),
-            (UUID(), 2),
-            (UUID(), 3)
+            AppIdWithIndex(id: UUID(), index: 1),
+            AppIdWithIndex(id: UUID(), index: 2),
+            AppIdWithIndex(id: UUID(), index: 3)
         ]).preferredColorScheme(.dark)
     }
 }
