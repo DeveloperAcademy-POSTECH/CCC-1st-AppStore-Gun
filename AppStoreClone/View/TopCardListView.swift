@@ -28,10 +28,10 @@ struct TopCardListView: View {
                   content: { TopCardView(appId: $0)
              })
             .preferredItemSize(CGSize(width: 350, height: pagerHeight))
-            .itemSpacing(10)
+            .itemSpacing(Constants.horizontalMargin / 2)
             .frame(height: pagerHeight)
             Divider()
-                .padding(.horizontal, 20)
+                .padding(.horizontal, Constants.horizontalMargin)
         }
      }
 }

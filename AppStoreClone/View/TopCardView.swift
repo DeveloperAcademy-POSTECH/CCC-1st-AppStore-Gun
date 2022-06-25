@@ -93,6 +93,6 @@ struct TopCardView_Previews: PreviewProvider {
     static var previews: some View {
         TopCardView(appId: UUID())
             .preferredColorScheme(.dark)
-            .padding(.horizontal, 16)
+            .padding(.horizontal, Constants.horizontalMargin)
     }
 }

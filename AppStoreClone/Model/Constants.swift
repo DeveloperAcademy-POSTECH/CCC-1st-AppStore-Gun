@@ -15,4 +15,8 @@ struct Constants {
     static var screenHeight: CGFloat {
         UIScreen.main.bounds.height
     }
+
+    static var horizontalMargin: CGFloat {
+        20
+    }
 }
