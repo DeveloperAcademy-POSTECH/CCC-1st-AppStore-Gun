@@ -33,7 +33,7 @@ struct TopCardListView: View {
             Divider()
                 .padding(.horizontal, Constants.horizontalMargin)
         }
-     }
+    }
 }
 
 struct TopCardListView_Previews: PreviewProvider {
