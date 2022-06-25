@@ -51,7 +51,7 @@ struct TopCardView: View {
                         }
                         .padding(.bottom, 2)
                         Spacer()
-                        DownloadButton(hasPurchase: topCardAppInfo.hasInternalPurchase)
+                        DownloadButton(hasPurchase: topCardAppInfo.hasInternalPurchase, isBright: true)
                     }
                     .padding(.horizontal, 14)
                     .padding(.bottom, 9)

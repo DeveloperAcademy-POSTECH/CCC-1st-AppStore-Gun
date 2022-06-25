@@ -46,7 +46,7 @@ struct SmallAppInfoView: View {
 
                 Spacer(minLength: 0)
 
-                DownloadButton(hasPurchase: appInfo.hasInternalPurchase)
+                DownloadButton(hasPurchase: appInfo.hasInternalPurchase, isBright: false)
             }
 
             if !index.isMultiple(of: 3) {
