@@ -33,7 +33,12 @@ struct TopCardView: View {
                 AsyncImage(url: URL(string: "https://source.unsplash.com/random")) { image in
                     image.resizable()
                 } placeholder: {
-                    ProgressView()
+                    VStack(spacing: 5) {
+                        ProgressView()
+                        Text("앱 정보 로드 중")
+                            .font(.caption)
+                            .foregroundColor(Color(.lightGray))
+                    }
                 }
                 .clipShape(RoundedRectangle(cornerRadius: 5))
                 VStack {
