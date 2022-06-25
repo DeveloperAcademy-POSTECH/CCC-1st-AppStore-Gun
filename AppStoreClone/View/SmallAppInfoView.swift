@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct SmallAppInfoView: View {
+    @StateObject private var appInfo: AppInfo
+
+    init(appId: UUID) {
+        _appInfo = StateObject(wrappedValue: AppInfo(id: appId))
+    }
+
     var body: some View {
         HStack {
             AsyncImage(url: URL(string: "https://source.unsplash.com/random")) { image in
@@ -19,23 +25,26 @@ struct SmallAppInfoView: View {
             .frame(width: 62, height: 62)
 
             VStack(alignment: .leading, spacing: 6) {
-                Text("리그 오브 레전드: 와일드 리프트")
+                Text(appInfo.name)
                     .font(.subheadline)
-                Text("5:5 MOBA 전투를 위한\n팀을 구성하세요")
+                Text(appInfo.subName)
                     .font(.caption)
                     .foregroundColor(Color(.lightGray))
             }
-            
+
             Spacer()
-            
-            DownloadButton(hasPurchase: false)
+
+            DownloadButton(hasPurchase: appInfo.hasInternalPurchase)
         }
         .frame(width: Constants.screenWidth - Constants.horizontalMargin * 2)
+        .task {
+            await appInfo.fetchInfo()
+        }
     }
 }
 
 struct SmallAppInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        SmallAppInfoView().preferredColorScheme(.dark)
+        SmallAppInfoView(appId: UUID()).preferredColorScheme(.dark)
     }
 }
