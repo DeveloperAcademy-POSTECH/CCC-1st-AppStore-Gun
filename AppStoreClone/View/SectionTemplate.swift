@@ -38,6 +38,7 @@ struct SectionTemplate<Content: View>: View {
                             .padding(.bottom, 3)
                     }
                 }
+                .padding(.horizontal, Constants.horizontalMargin)
             }
             content()
         }
