@@ -10,12 +10,10 @@ import SwiftUI
 struct MediumAppInfoView: View {
     @StateObject private var appInfo: AppInfo
     let index: Int
-    let ranked: Bool
 
-    init(appId: UUID, index: Int, ranked: Bool) {
+    init(appId: UUID, index: Int) {
         _appInfo = StateObject(wrappedValue: AppInfo(id: appId))
         self.index = index
-        self.ranked = ranked
     }
 
     var body: some View {
@@ -56,6 +54,6 @@ struct MediumAppInfoView: View {
 
 struct MediumAppInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        MediumAppInfoView(appId: UUID(), index: 1, ranked: true).preferredColorScheme(.dark)
+        MediumAppInfoView(appId: UUID(), index: 1).preferredColorScheme(.dark)
     }
 }
