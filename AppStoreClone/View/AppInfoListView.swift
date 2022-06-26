@@ -9,15 +9,19 @@ import Combine
 import SwiftUI
 import SwiftUIPager
 
-struct SmallAppInfoListView: View {
-    let appsCount: Int
+struct AppInfoListView: View {
     let ranked: Bool
     let appTupleColumns: [[AppIdWithIndex]]
+    let rowSize: AppInfoViewSize
     @StateObject var page: Page = .first()
 
-    init(appsCount: Int, ranked: Bool) {
-        self.appsCount = appsCount
+    var totalHeight: CGFloat {
+        rowSize == .small ? 218 : 194
+    }
+
+    init(appsCount: Int, ranked: Bool, rowSize: AppInfoViewSize) {
         self.ranked = ranked
+        self.rowSize = rowSize
 
         var subscriptions = Set<AnyCancellable>()
         var columns = [[AppIdWithIndex]]()
@@ -26,7 +30,7 @@ struct SmallAppInfoListView: View {
             AppIdWithIndex(id: UUID(), index: index)
         }
         .publisher
-        .collect(3)
+        .collect(rowSize == .small ? 3 : 2)
         .sink {
             columns.append($0)
         }
@@ -40,17 +44,17 @@ struct SmallAppInfoListView: View {
               data: appTupleColumns,
               id: \.self,
               content: { column in
-                SmallAppInfoColumnView(ranked: ranked, appIdRankTuples: column)
+            AppInfoColumnView(ranked: ranked, rowSize: rowSize, appIdRankTuples: column)
             }
         )
-        .preferredItemSize(CGSize(width: Constants.screenWidth - 2 * Constants.horizontalMargin, height: 218))
+        .preferredItemSize(CGSize(width: Constants.screenWidth - 2 * Constants.horizontalMargin, height: totalHeight))
         .itemSpacing(Constants.horizontalMargin / 2)
-        .frame(height: 218)
+        .frame(height: totalHeight)
     }
 }
 
 struct SmallAppInfoListView_Previews: PreviewProvider {
     static var previews: some View {
-        SmallAppInfoListView(appsCount: 20, ranked: true).preferredColorScheme(.dark)
+        AppInfoListView(appsCount: 20, ranked: false, rowSize: .medium).preferredColorScheme(.dark)
     }
 }
