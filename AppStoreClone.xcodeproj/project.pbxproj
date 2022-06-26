@@ -13,7 +13,7 @@
 		AB1680DF28672B1000C9E498 /* DownloadButtonStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1680DE28672B1000C9E498 /* DownloadButtonStack.swift */; };
 		AB1680E128672DF200C9E498 /* SmallAppInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1680E028672DF200C9E498 /* SmallAppInfoView.swift */; };
 		AB1680E32867336100C9E498 /* RandomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1680E22867336100C9E498 /* RandomImage.swift */; };
-		AB1680F1286761D700C9E498 /* SmallAppInfoColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1680F0286761D700C9E498 /* SmallAppInfoColumnView.swift */; };
+		AB1680F1286761D700C9E498 /* AppInfoColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1680F0286761D700C9E498 /* AppInfoColumnView.swift */; };
 		AB1680F3286763EE00C9E498 /* SmallAppInfoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1680F2286763EE00C9E498 /* SmallAppInfoListView.swift */; };
 		AB1680F52867698C00C9E498 /* AppIdWithIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1680F42867698C00C9E498 /* AppIdWithIndex.swift */; };
 		AB1936B6286877A100D0D941 /* MediumAppInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1936B5286877A100D0D941 /* MediumAppInfoView.swift */; };
@@ -33,7 +33,7 @@
 		AB1680DE28672B1000C9E498 /* DownloadButtonStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadButtonStack.swift; sourceTree = "<group>"; };
 		AB1680E028672DF200C9E498 /* SmallAppInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallAppInfoView.swift; sourceTree = "<group>"; };
 		AB1680E22867336100C9E498 /* RandomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomImage.swift; sourceTree = "<group>"; };
-		AB1680F0286761D700C9E498 /* SmallAppInfoColumnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallAppInfoColumnView.swift; sourceTree = "<group>"; };
+		AB1680F0286761D700C9E498 /* AppInfoColumnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoColumnView.swift; sourceTree = "<group>"; };
 		AB1680F2286763EE00C9E498 /* SmallAppInfoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallAppInfoListView.swift; sourceTree = "<group>"; };
 		AB1680F42867698C00C9E498 /* AppIdWithIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIdWithIndex.swift; sourceTree = "<group>"; };
 		AB1936B5286877A100D0D941 /* MediumAppInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumAppInfoView.swift; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 				AB1680DE28672B1000C9E498 /* DownloadButtonStack.swift */,
 				AB1680E028672DF200C9E498 /* SmallAppInfoView.swift */,
 				AB1680E22867336100C9E498 /* RandomImage.swift */,
-				AB1680F0286761D700C9E498 /* SmallAppInfoColumnView.swift */,
+				AB1680F0286761D700C9E498 /* AppInfoColumnView.swift */,
 				AB1680F2286763EE00C9E498 /* SmallAppInfoListView.swift */,
 				AB1936B5286877A100D0D941 /* MediumAppInfoView.swift */,
 			);
@@ -227,7 +227,7 @@
 				AB47F15428644356003A0195 /* TopCardView.swift in Sources */,
 				AB1680F3286763EE00C9E498 /* SmallAppInfoListView.swift in Sources */,
 				ABAF84582865D8F0000663D1 /* AppInfo.swift in Sources */,
-				AB1680F1286761D700C9E498 /* SmallAppInfoColumnView.swift in Sources */,
+				AB1680F1286761D700C9E498 /* AppInfoColumnView.swift in Sources */,
 				AB47F140286436A0003A0195 /* ContentView.swift in Sources */,
 				AB1680E32867336100C9E498 /* RandomImage.swift in Sources */,
 				AB1936B6286877A100D0D941 /* MediumAppInfoView.swift in Sources */,

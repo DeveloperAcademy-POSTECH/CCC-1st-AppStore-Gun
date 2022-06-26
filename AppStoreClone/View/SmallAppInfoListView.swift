@@ -38,7 +38,7 @@ struct SmallAppInfoListView: View {
               data: appTupleColumns,
               id: \.self,
               content: { column in
-                SmallAppInfoColumnView(ranked: ranked, appIdRankTuples: column)
+            AppInfoColumnView(ranked: ranked, rowSize: .small, appIdRankTuples: column)
             }
         )
         .preferredItemSize(CGSize(width: Constants.screenWidth - 2 * Constants.horizontalMargin, height: 218))
