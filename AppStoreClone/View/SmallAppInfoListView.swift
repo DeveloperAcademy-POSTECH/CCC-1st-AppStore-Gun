@@ -10,13 +10,11 @@ import SwiftUI
 import SwiftUIPager
 
 struct SmallAppInfoListView: View {
-    let appsCount: Int
     let ranked: Bool
     let appTupleColumns: [[AppIdWithIndex]]
     @StateObject var page: Page = .first()
 
     init(appsCount: Int, ranked: Bool) {
-        self.appsCount = appsCount
         self.ranked = ranked
 
         var subscriptions = Set<AnyCancellable>()
