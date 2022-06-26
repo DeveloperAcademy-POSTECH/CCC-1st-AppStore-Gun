@@ -10,6 +10,12 @@
 		AB1680CB2866CDD300C9E498 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1680CA2866CDD300C9E498 /* Constants.swift */; };
 		AB1680D72866F0BB00C9E498 /* SwiftUIPager in Frameworks */ = {isa = PBXBuildFile; productRef = AB1680D62866F0BB00C9E498 /* SwiftUIPager */; };
 		AB1680D92866F69100C9E498 /* TopCardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1680D82866F69100C9E498 /* TopCardListView.swift */; };
+		AB1680DF28672B1000C9E498 /* DownloadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1680DE28672B1000C9E498 /* DownloadButton.swift */; };
+		AB1680E128672DF200C9E498 /* SmallAppInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1680E028672DF200C9E498 /* SmallAppInfoView.swift */; };
+		AB1680E32867336100C9E498 /* RandomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1680E22867336100C9E498 /* RandomImage.swift */; };
+		AB1680F1286761D700C9E498 /* SmallAppInfoColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1680F0286761D700C9E498 /* SmallAppInfoColumnView.swift */; };
+		AB1680F3286763EE00C9E498 /* SmallAppInfoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1680F2286763EE00C9E498 /* SmallAppInfoListView.swift */; };
+		AB1680F52867698C00C9E498 /* AppIdWithIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1680F42867698C00C9E498 /* AppIdWithIndex.swift */; };
 		AB47F13E286436A0003A0195 /* AppStoreCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47F13D286436A0003A0195 /* AppStoreCloneApp.swift */; };
 		AB47F140286436A0003A0195 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47F13F286436A0003A0195 /* ContentView.swift */; };
 		AB47F142286436A0003A0195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB47F141286436A0003A0195 /* Assets.xcassets */; };
@@ -23,6 +29,12 @@
 /* Begin PBXFileReference section */
 		AB1680CA2866CDD300C9E498 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AB1680D82866F69100C9E498 /* TopCardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCardListView.swift; sourceTree = "<group>"; };
+		AB1680DE28672B1000C9E498 /* DownloadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadButton.swift; sourceTree = "<group>"; };
+		AB1680E028672DF200C9E498 /* SmallAppInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallAppInfoView.swift; sourceTree = "<group>"; };
+		AB1680E22867336100C9E498 /* RandomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomImage.swift; sourceTree = "<group>"; };
+		AB1680F0286761D700C9E498 /* SmallAppInfoColumnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallAppInfoColumnView.swift; sourceTree = "<group>"; };
+		AB1680F2286763EE00C9E498 /* SmallAppInfoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallAppInfoListView.swift; sourceTree = "<group>"; };
+		AB1680F42867698C00C9E498 /* AppIdWithIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIdWithIndex.swift; sourceTree = "<group>"; };
 		AB47F13A286436A0003A0195 /* AppStoreClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStoreClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB47F13D286436A0003A0195 /* AppStoreCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreCloneApp.swift; sourceTree = "<group>"; };
 		AB47F13F286436A0003A0195 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +101,11 @@
 			children = (
 				AB47F15328644356003A0195 /* TopCardView.swift */,
 				AB1680D82866F69100C9E498 /* TopCardListView.swift */,
+				AB1680DE28672B1000C9E498 /* DownloadButton.swift */,
+				AB1680E028672DF200C9E498 /* SmallAppInfoView.swift */,
+				AB1680E22867336100C9E498 /* RandomImage.swift */,
+				AB1680F0286761D700C9E498 /* SmallAppInfoColumnView.swift */,
+				AB1680F2286763EE00C9E498 /* SmallAppInfoListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -99,6 +116,7 @@
 				ABAF84572865D8F0000663D1 /* AppInfo.swift */,
 				ABAF845D286616C4000663D1 /* TopCardAppInfo.swift */,
 				AB1680CA2866CDD300C9E498 /* Constants.swift */,
+				AB1680F42867698C00C9E498 /* AppIdWithIndex.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -202,11 +220,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB1680E128672DF200C9E498 /* SmallAppInfoView.swift in Sources */,
 				AB47F15428644356003A0195 /* TopCardView.swift in Sources */,
+				AB1680F3286763EE00C9E498 /* SmallAppInfoListView.swift in Sources */,
 				ABAF84582865D8F0000663D1 /* AppInfo.swift in Sources */,
+				AB1680F1286761D700C9E498 /* SmallAppInfoColumnView.swift in Sources */,
 				AB47F140286436A0003A0195 /* ContentView.swift in Sources */,
+				AB1680E32867336100C9E498 /* RandomImage.swift in Sources */,
+				AB1680DF28672B1000C9E498 /* DownloadButton.swift in Sources */,
 				ABAF845E286616C4000663D1 /* TopCardAppInfo.swift in Sources */,
 				AB47F13E286436A0003A0195 /* AppStoreCloneApp.swift in Sources */,
+				AB1680F52867698C00C9E498 /* AppIdWithIndex.swift in Sources */,
 				AB1680CB2866CDD300C9E498 /* Constants.swift in Sources */,
 				AB1680D92866F69100C9E498 /* TopCardListView.swift in Sources */,
 			);

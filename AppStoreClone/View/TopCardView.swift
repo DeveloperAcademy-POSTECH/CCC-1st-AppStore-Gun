@@ -30,17 +30,7 @@ struct TopCardView: View {
                 Spacer()
             }
             ZStack {
-                AsyncImage(url: URL(string: "https://source.unsplash.com/random")) { image in
-                    image.resizable()
-                } placeholder: {
-                    VStack(spacing: 5) {
-                        ProgressView()
-                        Text("앱 정보 로드 중")
-                            .font(.caption)
-                            .foregroundColor(Color(.lightGray))
-                    }
-                }
-                .clipShape(RoundedRectangle(cornerRadius: 5))
+                RandomImage(cornerRadius: 5)
                 VStack {
                     Spacer()
                     HStack {
@@ -61,25 +51,7 @@ struct TopCardView: View {
                         }
                         .padding(.bottom, 2)
                         Spacer()
-                        VStack(spacing: 5) {
-                            Button {
-                            } label: {
-                                ZStack {
-                                    RoundedRectangle(cornerRadius: 15)
-                                        .foregroundColor(.white.opacity(0.5))
-                                    Text("받기")
-                                        .font(.system(size: 14))
-                                        .fontWeight(.semibold)
-                                        .foregroundColor(.white)
-                                }
-                                .frame(width: 74, height: 29)
-                            }
-                            if topCardAppInfo.isInternalPurchaseExists {
-                                Text("앱 내 구입")
-                                    .font(.system(size: 9))
-                                    .foregroundColor(.white)
-                            }
-                        }
+                        DownloadButton(hasPurchase: topCardAppInfo.hasInternalPurchase, isBright: true)
                     }
                     .padding(.horizontal, 14)
                     .padding(.bottom, 9)

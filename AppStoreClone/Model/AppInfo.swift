@@ -16,7 +16,7 @@ class AppInfo: Identifiable, ObservableObject {
     let id: UUID
     @Published var name = "Default Name"
     @Published var subName = "Default SubName"
-    let isInternalPurchaseExists = Int.random(in: 0...1) == 1
+    let hasInternalPurchase = Int.random(in: 0...1) == 1
 
     init(id: UUID) {
         self.id = id
