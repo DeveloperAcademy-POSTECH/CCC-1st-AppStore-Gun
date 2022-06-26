@@ -9,7 +9,7 @@ import Combine
 import SwiftUI
 import SwiftUIPager
 
-struct SmallAppInfoListView: View {
+struct AppInfoListView: View {
     let ranked: Bool
     let appTupleColumns: [[AppIdWithIndex]]
     @StateObject var page: Page = .first()
@@ -49,6 +49,6 @@ struct SmallAppInfoListView: View {
 
 struct SmallAppInfoListView_Previews: PreviewProvider {
     static var previews: some View {
-        SmallAppInfoListView(appsCount: 20, ranked: true).preferredColorScheme(.dark)
+        AppInfoListView(appsCount: 20, ranked: true).preferredColorScheme(.dark)
     }
 }
