@@ -53,7 +53,6 @@ struct SectionTemplate_Previews: PreviewProvider {
                             hasSeeAllButton: false) {
                 TopCardListView()
             }
-            
         }
         .preferredColorScheme(.dark)
     }
