@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct MediumCardView: View {
+    @StateObject private var appInfo: MediumCardAppInfo
+
+    init(appId: UUID) {
+        _appInfo = StateObject(wrappedValue: MediumCardAppInfo(id: appId))
+    }
+
     var totalWidth: CGFloat {
         Constants.screenWidth - 2 * Constants.horizontalMargin
     }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text("현재 진행 중")
+            Text(appInfo.topLabel)
                 .font(.caption2)
                 .foregroundColor(.blue)
             ZStack(alignment: .leading) {
@@ -23,11 +29,11 @@ struct MediumCardView: View {
                 VStack(alignment: .leading, spacing: 12) {
                     VStack(alignment: .leading, spacing: 6) {
                         Spacer(minLength: 0)
-                        Text("특별 이벤트")
+                        Text(appInfo.upperLabel)
                             .font(.caption2)
                             .foregroundColor(Color(.lightGray))
-                        Text("대학생 서포터즈 활동: AR필터 공모전")
-                        Text("나만의 필터를 세상에 알리세요!")
+                        Text(appInfo.midLabel)
+                        Text(appInfo.lowerLabel)
                             .font(.caption2)
                             .foregroundColor(Color(.lightGray))
                             .padding(.bottom, 6)
@@ -41,15 +47,17 @@ struct MediumCardView: View {
                             RandomImage(cornerRadius: 5)
                                 .frame(width: 40, height: 40)
                             VStack(alignment: .leading, spacing: 4) {
-                                Text("TikTok 틱톡")
+                                Text(appInfo.name)
                                     .font(.caption)
-                                Text("15초만에 사로잡는 재밌는 영상이 가득합니다.")
+                                Text(appInfo.subName)
                                     .font(.caption2)
                                     .foregroundColor(Color(.lightGray))
                                     .lineLimit(1)
                             }
                             Spacer(minLength: 0)
-                            DownloadButtonStack(hasPurchase: true, isBright: false, direction: .vertical)
+                            DownloadButtonStack(hasPurchase: appInfo.hasInternalPurchase,
+                                                isBright: false,
+                                                direction: .vertical)
                         }
                         .padding(.horizontal, 16)
                     }
@@ -58,12 +66,15 @@ struct MediumCardView: View {
             }
             .frame(height: 280)
             .clipShape(RoundedRectangle(cornerRadius: 10))
+            .task {
+                await appInfo.fetchInfo()
+            }
         }
     }
 }
 
 struct MediumCardView_Previews: PreviewProvider {
     static var previews: some View {
-        MediumCardView().preferredColorScheme(.dark)
+        MediumCardView(appId: UUID()).preferredColorScheme(.dark)
     }
 }

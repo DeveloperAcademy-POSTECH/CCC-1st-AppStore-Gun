@@ -27,6 +27,7 @@
 		ABAF84582865D8F0000663D1 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAF84572865D8F0000663D1 /* AppInfo.swift */; };
 		ABAF845E286616C4000663D1 /* TopCardAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAF845D286616C4000663D1 /* TopCardAppInfo.swift */; };
 		ABFA2B4B2869BDCE000330F0 /* MediumCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFA2B4A2869BDCE000330F0 /* MediumCardView.swift */; };
+		ABFA2B4D2869C6F6000330F0 /* MediumCardAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFA2B4C2869C6F6000330F0 /* MediumCardAppInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		ABAF84572865D8F0000663D1 /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		ABAF845D286616C4000663D1 /* TopCardAppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCardAppInfo.swift; sourceTree = "<group>"; };
 		ABFA2B4A2869BDCE000330F0 /* MediumCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumCardView.swift; sourceTree = "<group>"; };
+		ABFA2B4C2869C6F6000330F0 /* MediumCardAppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumCardAppInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				ABAF845D286616C4000663D1 /* TopCardAppInfo.swift */,
 				AB1680CA2866CDD300C9E498 /* Constants.swift */,
 				AB1680F42867698C00C9E498 /* AppIdWithIndex.swift */,
+				ABFA2B4C2869C6F6000330F0 /* MediumCardAppInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				AB1680DF28672B1000C9E498 /* DownloadButtonStack.swift in Sources */,
 				ABAF845E286616C4000663D1 /* TopCardAppInfo.swift in Sources */,
 				AB47F13E286436A0003A0195 /* AppStoreCloneApp.swift in Sources */,
+				ABFA2B4D2869C6F6000330F0 /* MediumCardAppInfo.swift in Sources */,
 				AB1680F52867698C00C9E498 /* AppIdWithIndex.swift in Sources */,
 				AB1936C12868A2FF00D0D941 /* SectionTemplate.swift in Sources */,
 				AB1680CB2866CDD300C9E498 /* Constants.swift in Sources */,
