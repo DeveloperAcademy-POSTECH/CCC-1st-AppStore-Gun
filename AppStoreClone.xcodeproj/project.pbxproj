@@ -17,6 +17,7 @@
 		AB1680F3286763EE00C9E498 /* AppInfoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1680F2286763EE00C9E498 /* AppInfoListView.swift */; };
 		AB1680F52867698C00C9E498 /* AppIdWithIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1680F42867698C00C9E498 /* AppIdWithIndex.swift */; };
 		AB1936B6286877A100D0D941 /* MediumAppInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1936B5286877A100D0D941 /* MediumAppInfoView.swift */; };
+		AB1936C12868A2FF00D0D941 /* SectionTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1936C02868A2FF00D0D941 /* SectionTemplate.swift */; };
 		AB47F13E286436A0003A0195 /* AppStoreCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47F13D286436A0003A0195 /* AppStoreCloneApp.swift */; };
 		AB47F140286436A0003A0195 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47F13F286436A0003A0195 /* ContentView.swift */; };
 		AB47F142286436A0003A0195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB47F141286436A0003A0195 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 		AB1680F2286763EE00C9E498 /* AppInfoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoListView.swift; sourceTree = "<group>"; };
 		AB1680F42867698C00C9E498 /* AppIdWithIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIdWithIndex.swift; sourceTree = "<group>"; };
 		AB1936B5286877A100D0D941 /* MediumAppInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumAppInfoView.swift; sourceTree = "<group>"; };
+		AB1936C02868A2FF00D0D941 /* SectionTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTemplate.swift; sourceTree = "<group>"; };
 		AB47F13A286436A0003A0195 /* AppStoreClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStoreClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB47F13D286436A0003A0195 /* AppStoreCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreCloneApp.swift; sourceTree = "<group>"; };
 		AB47F13F286436A0003A0195 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB1936BE2868A26F00D0D941 /* TopCardListView */ = {
+			isa = PBXGroup;
+			children = (
+				AB47F15328644356003A0195 /* TopCardView.swift */,
+				AB1680D82866F69100C9E498 /* TopCardListView.swift */,
+			);
+			path = TopCardListView;
+			sourceTree = "<group>";
+		};
+		AB1936BF2868A28B00D0D941 /* AppInfoListView */ = {
+			isa = PBXGroup;
+			children = (
+				AB1680E028672DF200C9E498 /* SmallAppInfoView.swift */,
+				AB1936B5286877A100D0D941 /* MediumAppInfoView.swift */,
+				AB1680F0286761D700C9E498 /* AppInfoColumnView.swift */,
+				AB1680F2286763EE00C9E498 /* AppInfoListView.swift */,
+			);
+			path = AppInfoListView;
+			sourceTree = "<group>";
+		};
 		AB47F131286436A0003A0195 = {
 			isa = PBXGroup;
 			children = (
@@ -101,14 +123,11 @@
 		AB47F152286442AA003A0195 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AB47F15328644356003A0195 /* TopCardView.swift */,
-				AB1680D82866F69100C9E498 /* TopCardListView.swift */,
-				AB1680DE28672B1000C9E498 /* DownloadButtonStack.swift */,
-				AB1680E028672DF200C9E498 /* SmallAppInfoView.swift */,
 				AB1680E22867336100C9E498 /* RandomImage.swift */,
-				AB1680F0286761D700C9E498 /* AppInfoColumnView.swift */,
-				AB1680F2286763EE00C9E498 /* AppInfoListView.swift */,
-				AB1936B5286877A100D0D941 /* MediumAppInfoView.swift */,
+				AB1680DE28672B1000C9E498 /* DownloadButtonStack.swift */,
+				AB1936C02868A2FF00D0D941 /* SectionTemplate.swift */,
+				AB1936BF2868A28B00D0D941 /* AppInfoListView */,
+				AB1936BE2868A26F00D0D941 /* TopCardListView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -235,6 +254,7 @@
 				ABAF845E286616C4000663D1 /* TopCardAppInfo.swift in Sources */,
 				AB47F13E286436A0003A0195 /* AppStoreCloneApp.swift in Sources */,
 				AB1680F52867698C00C9E498 /* AppIdWithIndex.swift in Sources */,
+				AB1936C12868A2FF00D0D941 /* SectionTemplate.swift in Sources */,
 				AB1680CB2866CDD300C9E498 /* Constants.swift in Sources */,
 				AB1680D92866F69100C9E498 /* TopCardListView.swift in Sources */,
 			);
