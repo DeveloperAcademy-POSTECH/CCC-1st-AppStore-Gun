@@ -68,7 +68,7 @@ struct MediumCardView: View {
                 }
                 .frame(width: totalWidth)
             }
-            .frame(height: 280)
+            .frame(height: totalWidth)
             .clipShape(RoundedRectangle(cornerRadius: 10))
             .task {
                 await appInfo.fetchInfo()
