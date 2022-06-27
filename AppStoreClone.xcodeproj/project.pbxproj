@@ -29,6 +29,7 @@
 		ABFA2B4B2869BDCE000330F0 /* MediumCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFA2B4A2869BDCE000330F0 /* MediumCardView.swift */; };
 		ABFA2B4D2869C6F6000330F0 /* MediumCardAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFA2B4C2869C6F6000330F0 /* MediumCardAppInfo.swift */; };
 		ABFA2B512869CB1E000330F0 /* MediumCardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFA2B502869CB1E000330F0 /* MediumCardListView.swift */; };
+		ABFA2B542869E4F6000330F0 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFA2B532869E4F6000330F0 /* AppView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		ABFA2B4A2869BDCE000330F0 /* MediumCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumCardView.swift; sourceTree = "<group>"; };
 		ABFA2B4C2869C6F6000330F0 /* MediumCardAppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumCardAppInfo.swift; sourceTree = "<group>"; };
 		ABFA2B502869CB1E000330F0 /* MediumCardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumCardListView.swift; sourceTree = "<group>"; };
+		ABFA2B532869E4F6000330F0 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				AB1936BF2868A28B00D0D941 /* AppInfoListView */,
 				AB1936BE2868A26F00D0D941 /* TopCardListView */,
 				ABFA2B492869BD9C000330F0 /* MediumCardListView */,
+				ABFA2B532869E4F6000330F0 /* AppView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				AB1680E128672DF200C9E498 /* SmallAppInfoView.swift in Sources */,
 				AB47F15428644356003A0195 /* TopCardView.swift in Sources */,
+				ABFA2B542869E4F6000330F0 /* AppView.swift in Sources */,
 				AB1680F3286763EE00C9E498 /* AppInfoListView.swift in Sources */,
 				ABAF84582865D8F0000663D1 /* AppInfo.swift in Sources */,
 				AB1680F1286761D700C9E498 /* AppInfoColumnView.swift in Sources */,
