@@ -26,6 +26,7 @@
 		AB47F15428644356003A0195 /* TopCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47F15328644356003A0195 /* TopCardView.swift */; };
 		ABAF84582865D8F0000663D1 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAF84572865D8F0000663D1 /* AppInfo.swift */; };
 		ABAF845E286616C4000663D1 /* TopCardAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAF845D286616C4000663D1 /* TopCardAppInfo.swift */; };
+		ABFA2B4B2869BDCE000330F0 /* MediumCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFA2B4A2869BDCE000330F0 /* MediumCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		AB47F15328644356003A0195 /* TopCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCardView.swift; sourceTree = "<group>"; };
 		ABAF84572865D8F0000663D1 /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		ABAF845D286616C4000663D1 /* TopCardAppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCardAppInfo.swift; sourceTree = "<group>"; };
+		ABFA2B4A2869BDCE000330F0 /* MediumCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				AB1936C02868A2FF00D0D941 /* SectionTemplate.swift */,
 				AB1936BF2868A28B00D0D941 /* AppInfoListView */,
 				AB1936BE2868A26F00D0D941 /* TopCardListView */,
+				ABFA2B492869BD9C000330F0 /* MediumCardListView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -141,6 +144,14 @@
 				AB1680F42867698C00C9E498 /* AppIdWithIndex.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		ABFA2B492869BD9C000330F0 /* MediumCardListView */ = {
+			isa = PBXGroup;
+			children = (
+				ABFA2B4A2869BDCE000330F0 /* MediumCardView.swift */,
+			);
+			path = MediumCardListView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +258,7 @@
 				AB1680F3286763EE00C9E498 /* AppInfoListView.swift in Sources */,
 				ABAF84582865D8F0000663D1 /* AppInfo.swift in Sources */,
 				AB1680F1286761D700C9E498 /* AppInfoColumnView.swift in Sources */,
+				ABFA2B4B2869BDCE000330F0 /* MediumCardView.swift in Sources */,
 				AB47F140286436A0003A0195 /* ContentView.swift in Sources */,
 				AB1680E32867336100C9E498 /* RandomImage.swift in Sources */,
 				AB1936B6286877A100D0D941 /* MediumAppInfoView.swift in Sources */,
