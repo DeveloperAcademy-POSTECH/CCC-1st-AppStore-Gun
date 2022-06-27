@@ -28,6 +28,7 @@
 		ABAF845E286616C4000663D1 /* TopCardAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAF845D286616C4000663D1 /* TopCardAppInfo.swift */; };
 		ABFA2B4B2869BDCE000330F0 /* MediumCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFA2B4A2869BDCE000330F0 /* MediumCardView.swift */; };
 		ABFA2B4D2869C6F6000330F0 /* MediumCardAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFA2B4C2869C6F6000330F0 /* MediumCardAppInfo.swift */; };
+		ABFA2B512869CB1E000330F0 /* MediumCardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFA2B502869CB1E000330F0 /* MediumCardListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		ABAF845D286616C4000663D1 /* TopCardAppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCardAppInfo.swift; sourceTree = "<group>"; };
 		ABFA2B4A2869BDCE000330F0 /* MediumCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumCardView.swift; sourceTree = "<group>"; };
 		ABFA2B4C2869C6F6000330F0 /* MediumCardAppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumCardAppInfo.swift; sourceTree = "<group>"; };
+		ABFA2B502869CB1E000330F0 /* MediumCardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumCardListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				ABFA2B4A2869BDCE000330F0 /* MediumCardView.swift */,
+				ABFA2B502869CB1E000330F0 /* MediumCardListView.swift */,
 			);
 			path = MediumCardListView;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				AB1936C12868A2FF00D0D941 /* SectionTemplate.swift in Sources */,
 				AB1680CB2866CDD300C9E498 /* Constants.swift in Sources */,
 				AB1680D92866F69100C9E498 /* TopCardListView.swift in Sources */,
+				ABFA2B512869CB1E000330F0 /* MediumCardListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

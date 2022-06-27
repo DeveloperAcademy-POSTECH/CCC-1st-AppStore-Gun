@@ -18,6 +18,10 @@ struct MediumCardView: View {
         Constants.screenWidth - 2 * Constants.horizontalMargin
     }
 
+    var totalHeight: CGFloat {
+        Constants.screenHeight * (280 / 844)
+    }
+
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text(appInfo.topLabel)
@@ -25,7 +29,7 @@ struct MediumCardView: View {
                 .foregroundColor(.blue)
             ZStack(alignment: .leading) {
                 RandomImage(cornerRadius: 10)
-                    .frame(width: totalWidth, height: 280)
+                    .frame(width: totalWidth, height: totalHeight)
                 VStack(alignment: .leading, spacing: 12) {
                     VStack(alignment: .leading, spacing: 6) {
                         Spacer(minLength: 0)
